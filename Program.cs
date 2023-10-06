@@ -41,7 +41,7 @@ namespace IdentityID_checker
 
         static bool IDisValid(String ID)
         {
-            String forbat = "^[A-Z][0-9]{9}$";
+            String forbat = "^[A-Z][1-2][0-9]{8}$";
             Regex rg = new Regex(forbat);   //規則運算式
             if (!rg.IsMatch(ID))
             {
